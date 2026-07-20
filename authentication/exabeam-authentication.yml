@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://developers.exabeam.com/exabeam/docs/api-keys
+docs: https://developers.exabeam.com/exabeam/docs/api-keys
+well_known: well-known/exabeam-oauth-authorization-server.json
+summary:
+  types: [oauth2]
+  oauth2_flows: [clientCredentials, authorizationCode]
+  token_endpoint: https://api.us-west.exabeam.cloud/oauth/token
+  pkce: true
+schemes:
+- name: OAuth2
+  type: oauth2
+  description: >-
+    Exabeam secures its REST APIs with OAuth2 bearer tokens. Developers generate
+    an API Key and Secret in the console (Settings > API Keys); the Secret is
+    shown in plaintext only once at creation. The key/secret pair is exchanged
+    for a short-lived bearer access token at the regional token endpoint, which
+    is then sent on API requests. The published RFC 8414 authorization-server
+    metadata additionally advertises an authorization_code flow with PKCE (S256).
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.us-west.exabeam.cloud/oauth/token
+    note: API key + secret exchanged for a bearer access token.
+  - flow: authorizationCode
+    authorizationUrl: https://api.us-west.exabeam.cloud/oauth/authorize
+    tokenUrl: https://api.us-west.exabeam.cloud/oauth/token
+    pkce: S256
+    scopes:
+      openid: OpenID Connect authentication
+      profile: Access to the authenticated principal's profile
+      offline_access: Issue a refresh token for offline access
+regional_endpoints:
+  token_endpoint_pattern: https://api.<region>.exabeam.cloud/oauth/token
+  regions: [us-west, us-east, eu, au, sg, jp, ca, ch]
+rate_limits:
+  authentication_api: 50 requests per 5 minutes per client source IP address
