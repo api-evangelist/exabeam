@@ -1,9 +1,34 @@
 aid: exabeam
 name: Exabeam
-description: Exabeam is a company surfaced as a portfolio company of lightspeed-venture-partners, norwest-venture-partners,
-  sapphire-ventures and added to the API Evangelist network as a stub for enrichment. This profile is
-  a lead awaiting the enrichment pipeline.
+description: >-
+  Exabeam is a cybersecurity company that delivers faster, more accurate threat
+  detection, investigation, and response (TDIR) through its AI-driven security
+  operations platform. The platform combines cloud-native SIEM (security
+  information and event management), user and entity behavioral analytics
+  (UEBA), log management and collection, correlation and detection rules, and
+  automated investigation workflows so security operations center (SOC) teams
+  can monitor, triage, and respond to threats at scale. Exabeam exposes a REST
+  API surface through its developer hub (developers.exabeam.com, hosted on
+  ReadMe) covering access control, audit, authentication, cloud and site log
+  collectors, context management, correlation rules, detection management, MITRE
+  ATT&CK mappings, search, service health and consumption, threat center, and
+  use cases. APIs are served from eight regional gateway hosts on the
+  exabeam.cloud domain and secured with OAuth2 (API key and secret issued in the
+  console). Exabeam also publishes an MCP server for agent-based access.
 url: https://raw.githubusercontent.com/api-evangelist/exabeam/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://files.readme.io/e4416f6-small-Exabeam-2024-Logo-Color-Dark-Large-02.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -14,15 +39,174 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Cybersecurity
+- Security
+- SIEM
+- UEBA
+- Threat Detection
+- Security Operations
+- SOC
+- Log Management
+- Incident Response
+apis:
+- name: Exabeam Access Control API
+  description: Manage users, roles, and permissions within the Exabeam platform.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Audit API
+  description: Retrieve audit-trail and activity-log records from the platform.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Authentication API
+  description: OAuth2 token issuance and API key / secret authentication for the Exabeam API surface.
+  humanURL: https://developers.exabeam.com/exabeam/docs/api-keys
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+  - type: Authentication
+    url: https://developers.exabeam.com/exabeam/docs/api-keys
+- name: Exabeam Cloud Collectors API
+  description: Configure and manage cloud-based log collectors.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Context Management API
+  description: Manage context tables and enrichment data used for detection and investigation.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Correlation Rules API
+  description: Create and manage correlation rules for threat detection.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Detection Management API
+  description: Manage detection rules and security content.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam MITRE ATT&CK API
+  description: Access MITRE ATT&CK technique and tactic mappings within the platform.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Search API
+  description: Search ingested log and event data across the platform.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Service Health and Consumption API
+  description: Retrieve service-health status and data-consumption metrics.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Site Collectors API
+  description: Configure and manage on-premises / site log collectors.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Threat Center API
+  description: Manage cases, alerts, and investigations in Exabeam Threat Center.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
+- name: Exabeam Use Cases API
+  description: Manage security use cases and their associated detection content.
+  humanURL: https://developers.exabeam.com/exabeam/reference
+  baseURL: https://api.us-west.exabeam.cloud
+  properties:
+  - type: APIReference
+    url: https://developers.exabeam.com/exabeam/reference
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/exabeam-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.exabeam.com/responsible-disclosure/
 - type: Website
   url: https://exabeam.com
+- type: DeveloperPortal
+  url: https://developers.exabeam.com
+- type: Documentation
+  url: https://developers.exabeam.com/exabeam/docs
+- type: APIReference
+  url: https://developers.exabeam.com/exabeam/reference
+- type: GettingStarted
+  url: https://developers.exabeam.com/exabeam/docs/api-keys
+- type: Authentication
+  url: authentication/exabeam-authentication.yml
+- type: OAuthScopes
+  url: scopes/exabeam-scopes.yml
+- type: ChangeLog
+  url: https://developers.exabeam.com/changelog
+- type: Blog
+  url: https://www.exabeam.com/blog/
+- type: Support
+  url: https://mycommunity.exabeam.com/category/forums
+- type: GitHubOrganization
+  url: https://github.com/Exabeam
+- type: Login
+  url: https://developers.exabeam.com/login
+- type: TermsOfService
+  url: https://www.exabeam.com/legal/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.exabeam.com/legal/privacy-policy/
+- type: StatusPage
+  url: https://exabeam.statuspage.io/
+- type: TrustCenter
+  url: https://exabeam.securitypal.com/
+- type: Compliance
+  url: https://exabeam.securitypal.com/
+- type: MCPServer
+  url: mcp/exabeam-mcp.yml
+- type: WellKnown
+  url: well-known/exabeam-well-known.yml
+- type: LLMsTxt
+  url: llms/exabeam-llms.txt
+- type: Lifecycle
+  url: lifecycle/exabeam-lifecycle.yml
+- type: Conventions
+  url: conventions/exabeam-conventions.yml
+- type: Conformance
+  url: conformance/exabeam-conformance.yml
+- type: DomainSecurity
+  url: security/exabeam-domain-security.yml
+- type: Packages
+  url: packages/exabeam-packages.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

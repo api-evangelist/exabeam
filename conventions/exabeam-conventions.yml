@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://developers.exabeam.com/exabeam/docs/api-keys
+authentication:
+  style: oauth2-bearer
+  detail: >-
+    API Key + Secret (console-issued) exchanged for a short-lived OAuth2 bearer
+    access token at https://api.<region>.exabeam.cloud/oauth/token; token sent as
+    Authorization: Bearer <token>.
+  ref: authentication/exabeam-authentication.yml
+base_url:
+  style: regional
+  pattern: https://api.<region>.exabeam.cloud
+  regions: [us-west, us-east, eu, au, sg, jp, ca, ch]
+versioning:
+  style: uri-path
+  detail: version segment in the request path (e.g. /v1, /v2, /auth/v1)
+rate_limiting:
+  authentication_api: 50 requests per 5 minutes per client source IP address
+  note: Per-API rate limits are documented in the developer hub reference.
+idempotency:
+  documented: false
+  note: No idempotency-key contract was located in the developer hub in this pass.
+pagination:
+  documented: unknown
+  note: Not captured in this pass (OpenAPI specs are gated behind the ReadMe hub).
+error_envelope:
+  observed: >-
+    Gateway 404 responses return a JSON object of the shape
+    {"timestamp","status","error","path"} (Spring-style error body observed on
+    the api.<region>.exabeam.cloud gateway).
+cross_links:
+  authentication: authentication/exabeam-authentication.yml
+  scopes: scopes/exabeam-scopes.yml
+  lifecycle: lifecycle/exabeam-lifecycle.yml
+  well_known: well-known/exabeam-well-known.yml

@@ -1,0 +1,38 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.us-west.exabeam.cloud/.well-known/oauth-authorization-server
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    OAuth2 secures the API; token endpoint /oauth/token and RFC 8414
+    authorization-server metadata are published on each regional gateway.
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: true
+  evidence: /.well-known/oauth-authorization-server returns 200 with issuer, token and authorization endpoints.
+- id: oauth2-pkce
+  conforms: true
+  evidence: code_challenge_methods_supported includes S256.
+- id: oidc
+  conforms: partial
+  evidence: >-
+    openid / profile / offline_access scopes are advertised, but
+    /.well-known/openid-configuration returns 404 (full OIDC discovery not published).
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Gateway error bodies use a Spring-style {timestamp,status,error,path} envelope, not application/problem+json.
+compliance_program:
+  published: true
+  source: https://exabeam.securitypal.com/
+  certifications:
+  - SOC 2 Type 2
+  - ISO 27001
+  - ISO 27017
+  - ISO 27018
+  - PCI DSS
+  - HIPAA
+  - GDPR
+  - CCPA
+  - IRAP
+  - Cyber Essentials
+  - TRUSTe

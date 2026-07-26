@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://developers.exabeam.com
+official_sdks_found: false
+notes: >-
+  No first-party Exabeam client SDK was found on npm, PyPI, Maven Central,
+  NuGet, pkg.go.dev, RubyGems, Packagist, or crates.io, and the Exabeam GitHub
+  organization (github.com/Exabeam) publishes no API client library (only
+  upstream forks). Authentication is via console-issued API key/secret and
+  OAuth2; integration is direct REST. Third-party / community clients exist and
+  are listed below with official: false. No SDKs pointer is wired in apis.yml
+  because no first-party library was found.
+packages:
+- language: powershell
+  registry: github
+  name: Invoke-Exabeam
+  url: https://github.com/pertinaxmalum/Invoke-Exabeam
+  official: false
+  note: Community PowerShell cmdlets for calling Exabeam APIs.
+- language: python
+  registry: github
+  name: exabeam-ueba-api-client
+  url: https://github.com/sravinet/exabeam-ueba-api-client
+  official: false
+  note: Community Exabeam UEBA REST client.

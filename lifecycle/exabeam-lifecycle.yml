@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://developers.exabeam.com/exabeam/reference
+versioning:
+  scheme: uri-path
+  note: >-
+    API paths are versioned in the URI (e.g. /v1, /v2, /auth/v1). The developer
+    hub publishes a single 1.0 branch of the API definitions.
+  docs: https://developers.exabeam.com/exabeam/reference
+changelog: https://developers.exabeam.com/changelog
+status_page: https://exabeam.statuspage.io/
+regional_gateways:
+- https://api.us-west.exabeam.cloud
+- https://api.us-east.exabeam.cloud
+- https://api.eu.exabeam.cloud
+- https://api.au.exabeam.cloud
+- https://api.sg.exabeam.cloud
+- https://api.jp.exabeam.cloud
+- https://api.ca.exabeam.cloud
+- https://api.ch.exabeam.cloud
+deprecation:
+  policy_url: null
+  note: No formal deprecation / sunset-header policy was located in the developer hub.
+deprecated_operations: []

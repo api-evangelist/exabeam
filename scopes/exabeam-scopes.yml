@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.us-west.exabeam.cloud/.well-known/oauth-authorization-server
+docs: https://developers.exabeam.com/exabeam/docs/api-keys
+schemes:
+- name: OAuth2
+  source: https://api.us-west.exabeam.cloud/.well-known/oauth-authorization-server
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://api.us-west.exabeam.cloud/oauth/authorize
+    tokenUrl: https://api.us-west.exabeam.cloud/oauth/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication.
+  flows: [authorizationCode]
+  sources: [well-known/exabeam-oauth-authorization-server.json]
+- scope: profile
+  description: Access to the authenticated principal's profile.
+  flows: [authorizationCode]
+  sources: [well-known/exabeam-oauth-authorization-server.json]
+- scope: offline_access
+  description: Issue a refresh token for continued (offline) access.
+  flows: [authorizationCode]
+  sources: [well-known/exabeam-oauth-authorization-server.json]
+notes: >-
+  Scopes are taken verbatim from the published RFC 8414 authorization-server
+  metadata (scope: "openid profile offline_access"). Fine-grained,
+  product-level API permissions are governed by the role assigned to the API
+  key in the Exabeam console rather than by additional OAuth scopes.

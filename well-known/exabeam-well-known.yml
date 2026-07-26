@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.us-west.exabeam.cloud/.well-known/oauth-authorization-server
+host: https://api.us-west.exabeam.cloud
+notes: >-
+  The Exabeam API gateway is served from eight regional hosts on the
+  exabeam.cloud domain (us-west, us-east, eu, au, sg, jp, ca, ch). The
+  /.well-known/oauth-authorization-server document (RFC 8414) is published on
+  each regional host; the us-west host was probed as the representative.
+documents:
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: exabeam-oauth-authorization-server.json
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+also_probed:
+- host: https://developers.exabeam.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://www.exabeam.com
+  path: /.well-known/security.txt
+  status: 404
