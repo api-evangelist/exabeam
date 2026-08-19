@@ -7,16 +7,13 @@ server:
   vendor: Exabeam
   official: true
   transport: http
-notes: >-
-  Exabeam publishes an official MCP Server, documented as a dedicated guide
-  under the "Guides" section of the Exabeam developer hub
-  (developers.exabeam.com). It exposes the Exabeam security-operations platform
-  (search, threat center, detection, context) to MCP-capable agents. The exact
-  connection URL, transport parameters, authentication binding, and tool list
-  are described in the developer-hub MCP Server guide; they were not machine-
-  captured in this pass (the ReadMe-hosted guide content is gated behind the
-  SPA / rate limiting). Connection is expected to reuse the platform OAuth2
-  bearer credentials documented in authentication/exabeam-authentication.yml.
+notes: Exabeam publishes an official MCP Server, documented as a dedicated guide under the "Guides" section
+  of the Exabeam developer hub (developers.exabeam.com). It exposes the Exabeam security-operations platform
+  (search, threat center, detection, context) to MCP-capable agents. The exact connection URL, transport
+  parameters, authentication binding, and tool list are described in the developer-hub MCP Server guide;
+  they were not machine- captured in this pass (the ReadMe-hosted guide content is gated behind the SPA
+  / rate limiting). Connection is expected to reuse the platform OAuth2 bearer credentials documented
+  in authentication/exabeam-authentication.yml.
 coverage:
 - Search API
 - Threat Center API
@@ -25,3 +22,8 @@ coverage:
 - Context Management API
 - MITRE ATT&CK API
 tools: []
+deployment:
+  mode: remote
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
