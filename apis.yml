@@ -16,6 +16,17 @@ description: >-
   exabeam.cloud domain and secured with OAuth2 (API key and secret issued in the
   console). Exabeam also publishes an MCP server for agent-based access.
 url: https://raw.githubusercontent.com/api-evangelist/exabeam/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
