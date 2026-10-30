@@ -64,6 +64,123 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Exabeam is a company surfaced as a portfolio company of lightspeed-venture-partners, norwest-venture-partners, sapphire-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Exabeam is a cybersecurity company that delivers faster, more accurate threat detection, investigation, and response (TDIR) through its AI-driven security operations platform. The platform combines cloud-native SIEM (security information and event management), user and entity behavioral analytics (UEBA), log management and collection, correlation and detection rules, and automated investigation workflows so security operations center (SOC) teams can monitor, triage, and respond to threats at scale. Exabeam exposes a REST API surface through its developer hub (developers.exabeam.com, hosted on ReadMe) covering access control, audit, authentication, cloud and site log collectors, context management, correlation rules, detection management, MITRE ATT&CK mappings, search, service health and consumption, threat center, and use cases. APIs are served from eight regional gateway hosts on the exabeam.cloud domain and secured with OAuth2 (API key and secret issued in the console). Exabeam also publishes an MCP server for agent-based access.
 
-Backed by: lightspeed-venture-partners, norwest-venture-partners, sapphire-ventures — https://exabeam.com
+**Areas:** Company · Cybersecurity · Security · SIEM · UEBA · Threat Detection · Security Operations · SOC · Log Management · Incident Response
+
+## Exabeam on APIs.io
+
+Everything profiled for Exabeam is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/exabeam/](https://apis.io/providers/exabeam/)** — or go straight to one of the APIs or properties below.
+
+### APIs (13)
+
+- [Exabeam Access Control API](https://apis.io/apis/exabeam/exabeam-access-control-api/) — Manage users, roles, and permissions within the Exabeam platform.
+- [Exabeam Audit API](https://apis.io/apis/exabeam/exabeam-audit-api/) — Retrieve audit-trail and activity-log records from the platform.
+- [Exabeam Authentication API](https://apis.io/apis/exabeam/exabeam-authentication-api/) — OAuth2 token issuance and API key / secret authentication for the Exabeam API surface.
+- [Exabeam Cloud Collectors API](https://apis.io/apis/exabeam/exabeam-cloud-collectors-api/) — Configure and manage cloud-based log collectors.
+- [Exabeam Context Management API](https://apis.io/apis/exabeam/exabeam-context-management-api/) — Manage context tables and enrichment data used for detection and investigation.
+- [Exabeam Correlation Rules API](https://apis.io/apis/exabeam/exabeam-correlation-rules-api/) — Create and manage correlation rules for threat detection.
+- [Exabeam Detection Management API](https://apis.io/apis/exabeam/exabeam-detection-management-api/) — Manage detection rules and security content.
+- [Exabeam MITRE ATT&CK API](https://apis.io/apis/exabeam/exabeam-mitre-attck-api/) — Access MITRE ATT&CK technique and tactic mappings within the platform.
+- [Exabeam Search API](https://apis.io/apis/exabeam/exabeam-search-api/) — Search ingested log and event data across the platform.
+- [Exabeam Service Health and Consumption API](https://apis.io/apis/exabeam/exabeam-service-health-and-consumption-api/) — Retrieve service-health status and data-consumption metrics.
+- [Exabeam Site Collectors API](https://apis.io/apis/exabeam/exabeam-site-collectors-api/) — Configure and manage on-premises / site log collectors.
+- [Exabeam Threat Center API](https://apis.io/apis/exabeam/exabeam-threat-center-api/) — Manage cases, alerts, and investigations in Exabeam Threat Center.
+- [Exabeam Use Cases API](https://apis.io/apis/exabeam/exabeam-use-cases-api/) — Manage security use cases and their associated detection content.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [exabeam](https://apis.io/servers/exabeam/exabeam/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Exabeam Authentication](https://apis.io/security/exabeam/exabeam-authentication/)
+- [Exabeam Domain Security](https://apis.io/security/exabeam/exabeam-domain-security/)
+- [Exabeam Trust Center](https://apis.io/security/exabeam/exabeam-trust-center/)
+- [Exabeam Vulnerability Disclosure](https://apis.io/security/exabeam/exabeam-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Exabeam Scopes](https://apis.io/scopes/exabeam/exabeam-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://exabeam.com)
+- [Documentation](https://developers.exabeam.com/exabeam/docs)
+- [Getting started](https://developers.exabeam.com/exabeam/docs/api-keys)
+- [API reference](https://developers.exabeam.com/exabeam/reference)
+- [Support](https://mycommunity.exabeam.com/category/forums)
+- [Changelog](https://developers.exabeam.com/changelog)
+- [Blog](https://www.exabeam.com/blog/)
+- [Security](https://www.exabeam.com/responsible-disclosure/)
+- [Compliance](https://exabeam.securitypal.com/)
+- [Trust centre](https://exabeam.securitypal.com/)
+- [Terms of service](https://www.exabeam.com/legal/terms-and-conditions/)
+- [Privacy policy](https://www.exabeam.com/legal/privacy-policy/)
+- [GitHub](https://github.com/Exabeam)
+- [Status](https://exabeam.statuspage.io/)
+
+## API Evangelist rating
+
+**Kin Score 34.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 76.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 32.1 |
+| Access clarity | 43.4 |
+
+**Agent readiness 14.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 45.1** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/exabeam/](https://apis.io/providers/exabeam/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Exabeam: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/exabeam/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
